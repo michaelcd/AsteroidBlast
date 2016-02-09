@@ -7,26 +7,21 @@
   <body>
     <canvas></canvas>
     <script src="lib/movingObject.js"></script>
+    <script src="lib/keymaster.js"></script>
     <script src="lib/utils.js"></script>
     <script src="lib/asteroid.js"></script>
+    <script src="lib/ship.js"></script>
+    <script src="lib/bullet.js"></script>
     <script src="lib/game.js"></script>
     <script src="lib/gameView.js"></script>
 
     <script>
       var canvasEl = document.getElementsByTagName("canvas")[0];
-      canvasEl.height = window.innerHeight;
-      canvasEl.width = window.innerWidth;
+      canvasEl.height = window.innerHeight - 50;
+      canvasEl.width = window.innerWidth - 50;
       var ctx = canvasEl.getContext("2d");
-      // var mo = new Asteroids.MovingObject(
-      //   { pos: [30, 30], vel: [10, 10], radius: 20, color: "#00FF00"}
-      // );
-      //
-      // mo.draw(ctx)
-
       var g = new Asteroids.GameView(ctx);
       g.start();
-
-
     </script>
   </body>
 </html>
