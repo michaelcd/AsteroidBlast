@@ -1,0 +1,7 @@
+graphics
+ship doesnt move with impulse
+ship starts in middle of left half
+ship stuck in bounds
+asteroids are initially placed on right side
+random sized asteroids
+asteroids are destroyed when they go off screen
