@@ -1,6 +1,6 @@
 graphics
 limit number of bullets / rate of fire
 ship doesnt move with impulse
-ship stuck in bounds
 asteroids are initially placed on right side
 random sized asteroids
+add score panel, track score
