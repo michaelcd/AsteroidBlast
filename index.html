@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
+    <div style="font-family: PressStart;"> </div>
     <canvas id="foreground"></canvas>
     <canvas id="background"></canvas>
     <script src="lib/movingObject.js"></script>
@@ -17,30 +19,32 @@
     <script src="lib/game.js"></script>
     <script src="lib/gameView.js"></script>
     <script src="lib/stars.js"></script>
-    <style type="text/css">
-      canvas {
-        position:absolute;
-        top: 0;
-        left: 0;
-      }
-
-      #background {
-        z-index: -1;
-      }
-    </style>
-
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="all" href="./lib/app.css" />
     <script>
       var canvasEl = document.getElementsByTagName("canvas")[0];
       var canvasEl2 = document.getElementsByTagName("canvas")[1];
-      canvasEl.height = window.innerHeight;
+      canvasEl.height = window.innerHeight - 30;
       canvasEl.width = window.innerWidth;
-      canvasEl2.height = window.innerHeight;
+      canvasEl2.height = window.innerHeight - 30;
       canvasEl2.width = window.innerWidth;
       var ctx = canvasEl.getContext("2d");
       var ctx2 = canvasEl2.getContext("2d");
       var g = new Asteroids.GameView(ctx, ctx2);
       g.start();
     </script>
+    <div class="footer group">
+      <p class="footer-text">Created by
+        <a href="http://www.michaelduke.nyc">
+          Michael Duke
+        </a>
+      </p>
+      <ul class="icons">
+        <li><a href="https://www.linkedin.com/in/michaelcduke" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        <li><a href="https://github.com/michaelcd" class="icon fa-github"><span class="label">Github</span></a></li>
+        <li><a href="mailto:michaelcduke@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+      </ul>
+    </div>
   </body>
 </html>

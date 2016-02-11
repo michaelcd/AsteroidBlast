@@ -1,0 +1,104 @@
+@import url("font-awesome.min.css");
+
+html, body, header, nav, main,
+section, article, footer, small {
+ display: block;
+
+}
+
+html, body, header, nav, h1, a, ul, li,
+strong, main, section, img, div, h2, p,
+form, fieldset, label, input, textarea,
+button, article, footer, small, h3, h4 {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  border:0;
+  font: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+canvas {
+  position:absolute;
+  top: 0;
+  left: 0;
+}
+
+.group:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+#background {
+  z-index: -1;
+}
+
+.footer {
+  box-sizing: border-box;
+  position:absolute;
+  display:block;
+  width:100%;
+  left: 0;
+  bottom:0;
+  padding: 0 10px;
+  min-height: 30px;
+  background: #eeeeee;
+  color:#000000;
+  vertical-align: middle;
+}
+
+.footer-text {
+  float:left;
+  display:block;
+  line-height: 30px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 14px;
+}
+
+.footer-text > a:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+}
+
+.icon:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+
+.icon > .label {
+  display: none;
+}
+
+ul.icons {
+  float:right;
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+  margin: 2px 0;
+}
+
+  ul.icons li {
+    display: inline-block;
+    padding: 0 1em 0 0;
+  }
+
+    ul.icons li:last-child {
+      padding-right: 0;
+    }
+
+    ul.icons li .icon:before {
+      font-size: 1.5em;
+    }
