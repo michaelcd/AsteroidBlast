@@ -1,6 +1,7 @@
-graphics
-limit number of bullets / rate of fire
-ship doesnt move with impulse
-asteroids are initially placed on right side
-random sized asteroids
+asteroid image scaling with different sizes
 add score panel, track score
+
+
+
+asteroids come in at angles
+limit number of bullets / rate of fire
