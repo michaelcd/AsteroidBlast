@@ -5,7 +5,7 @@
     <title></title>
   </head>
   <body>
-    <canvas></canvas>
+    <canvas id="foreground"></canvas>
     <canvas id="background"></canvas>
     <script src="lib/movingObject.js"></script>
     <script src="lib/keymaster.js"></script>
@@ -20,6 +20,8 @@
     <style type="text/css">
       canvas {
         position:absolute;
+        top: 0;
+        left: 0;
       }
 
       #background {
@@ -31,10 +33,10 @@
     <script>
       var canvasEl = document.getElementsByTagName("canvas")[0];
       var canvasEl2 = document.getElementsByTagName("canvas")[1];
-      canvasEl.height = window.innerHeight - 25;
-      canvasEl.width = window.innerWidth - 25;
-      canvasEl2.height = window.innerHeight - 25;
-      canvasEl2.width = window.innerWidth - 25;
+      canvasEl.height = window.innerHeight;
+      canvasEl.width = window.innerWidth;
+      canvasEl2.height = window.innerHeight;
+      canvasEl2.width = window.innerWidth;
       var ctx = canvasEl.getContext("2d");
       var ctx2 = canvasEl2.getContext("2d");
       var g = new Asteroids.GameView(ctx, ctx2);
