@@ -69,6 +69,10 @@ canvas {
   position: relative;
 }
 
+.icon:hover {
+  color: #49bf9d;
+}
+
 .icon:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
