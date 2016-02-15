@@ -21,6 +21,10 @@ button, article, footer, small, h3, h4 {
   background: transparent;
 }
 
+body {
+  background: black;
+}
+
 canvas {
   position:absolute;
   top: 0;
@@ -35,6 +39,50 @@ canvas {
 
 #background {
   z-index: -1;
+}
+
+.start-screen {
+  display: block;
+  font-family: 'Press Start 2P';
+  position:absolute;
+  z-index: 5;
+  top:0;
+  left:0;
+  height: calc(100% - 30px);
+  width:100%;
+  color:white;
+}
+
+.game-over-screen {
+  display: none;
+  font-family: 'Press Start 2P';
+  position:absolute;
+  z-index: 5;
+  top:0;
+  left:0;
+  height: calc(100% - 30px);
+  width:100%;
+  color:white;
+}
+
+.start-button {
+  cursor: pointer;
+  position:absolute;
+  top: calc(50%);
+  left: calc(50% - 80px);
+}
+
+.game-over-button {
+  cursor: pointer;
+  position:absolute;
+  top: calc(50%);
+  left: calc(50% - 88px);
+}
+
+.game-intro {
+  position:absolute;
+  top: calc(60%);
+  left: calc(50% - 232px);
 }
 
 .footer {
