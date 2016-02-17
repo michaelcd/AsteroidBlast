@@ -1,4 +1,4 @@
-@import url("font-awesome.min.css");
+/*@import url("font-awesome.min.css");*/
 
 html, body, header, nav, main,
 section, article, footer, small {
@@ -53,6 +53,13 @@ canvas {
   color:white;
 }
 
+.start-screen-title {
+  position:absolute;
+  font-size: 30px;
+  top: calc(40%);
+  left: calc(50% - 195px);
+}
+
 .game-over-screen {
   display: none;
   font-family: 'Press Start 2P';
@@ -69,7 +76,7 @@ canvas {
   cursor: pointer;
   position:absolute;
   top: calc(50%);
-  left: calc(50% - 80px);
+  left: calc(50% - 152px);
 }
 
 .game-over-button {
@@ -81,8 +88,9 @@ canvas {
 
 .game-intro {
   position:absolute;
-  top: calc(60%);
+  top: calc(80%);
   left: calc(50% - 232px);
+  text-align: center;
 }
 
 .footer {
