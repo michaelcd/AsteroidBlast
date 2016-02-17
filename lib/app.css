@@ -1,4 +1,4 @@
-@import url("font-awesome.min.css");
+/*@import url("font-awesome.min.css");*/
 
 html, body, header, nav, main,
 section, article, footer, small {
@@ -69,7 +69,7 @@ canvas {
   cursor: pointer;
   position:absolute;
   top: calc(50%);
-  left: calc(50% - 80px);
+  left: calc(50% - 152px);
 }
 
 .game-over-button {
@@ -83,6 +83,7 @@ canvas {
   position:absolute;
   top: calc(60%);
   left: calc(50% - 232px);
+  text-align: center;
 }
 
 .footer {
