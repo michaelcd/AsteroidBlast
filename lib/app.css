@@ -73,17 +73,15 @@ canvas {
 }
 
 .start-button {
-  cursor: pointer;
   position:absolute;
   top: calc(50%);
-  left: calc(50% - 152px);
+  left: calc(50% - 176px);
 }
 
 .game-over-button {
-  cursor: pointer;
   position:absolute;
   top: calc(50%);
-  left: calc(50% - 88px);
+  left: calc(50% - 208px);
 }
 
 .game-intro {

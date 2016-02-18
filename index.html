@@ -39,13 +39,18 @@
       var g = new Asteroids.GameView(ctx, ctx2);
       // g.start();
       $(document).ready(function () {
-        $(".start-button").on("click", g.start.bind(g));
-        $(".game-over-button").on("click", g.start.bind(g));
+        // $(".start-button").on("click", g.start.bind(g));
+        // $(".game-over-button").on("click", g.start.bind(g));
+        window.addEventListener("keydown", function () {
+          if (g.game.paused === true) {
+            g.start()
+          }
+        }, false);
       });
     </script>
     <div class="start-screen">
       <div class="start-screen-title">AsteroidBlast</div>
-      <button class="start-button">Click here to start</button>
+      <div class="start-button">Press any key to start</div>
       <div class="game-intro">
         <div>WASD to move</div>
         <div>Spacebar to fire</div>
@@ -54,7 +59,7 @@
     </div>
     <div class="game-over-screen">
       <div class="start-screen-title">AsteroidBlast</div>
-      <button class="game-over-button">Play Again!</button>
+      <div class="game-over-button">Press a key to play again!</div>
     </div>
     <div class="footer group">
       <p class="footer-text">Created by
