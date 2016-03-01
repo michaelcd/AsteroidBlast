@@ -6,7 +6,8 @@
 
 AsteroidBlast is a browser-based game built with Javascript and HTML5, inspired by classic side-scrolling shooter games.
 
-![screenshot](lib/asteroid.png)
+<!-- ![screenshot](lib/asteroid.png) -->
+[![screenshot](lib/asteroid.png)](http://michaelduke.nyc/AsteroidBlast/)
 
 ## Features
 - Renders side-scrolling game view using multiple HTML5 Canvas layers.
